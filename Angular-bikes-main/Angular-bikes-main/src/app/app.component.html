@@ -1,0 +1,25 @@
+<div id="container">
+
+  <header>
+    <h1>{{title}}</h1>
+    <span>{{messages.length}} messages à lire</span>
+    <nav>
+      <a routerLink="/contracts">View contracts</a>
+      |
+      <a routerLink="/stations/luxembourg">luxembourg</a>
+      |
+      <a routerLink="/stations/valence">valence</a>
+      |
+      <a routerLink="/stations/toyama">toyama</a>
+    </nav>
+  </header>
+
+  <div id="main">
+    <router-outlet></router-outlet>
+    <app-messages></app-messages>
+  </div>
+
+  <footer>copyright BCH 2021</footer>
+
+</div>
+

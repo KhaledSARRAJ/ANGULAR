@@ -1,0 +1,9 @@
+
+<section class="details" *ngIf="hero">
+    
+    <h3>{{hero.prenom}} {{hero.nom | uppercase}}</h3>
+    <span>Pouvoir : </span>{{hero.pouvoir}}
+
+    <input [(ngModel)]="hero.prenom"/>
+
+</section>
